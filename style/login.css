@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url(../img/img.bg.webp) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(252, 249, 249, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Form Elements */
+h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 50px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px ;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7e5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eb5d42;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.message a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
