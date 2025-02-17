@@ -209,7 +209,7 @@ nav a:hover {
     text-align: left;
     width: 100%;
     max-width: 300px;
-    height: 400px;
+    height: 500px;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -222,7 +222,15 @@ nav a:hover {
         width: 100%; /* Full width on mobile */
     }
 }
-
+.carousel-cell {
+    width: 28%;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
+ 
 /* Image */
 .residence-card img {
     width: 100%;
@@ -305,6 +313,7 @@ nav a:hover {
     width: 100%;
     border-radius: 50% 50% 0 0; /* Rounded top like the image */
     object-fit: cover;
+    
 }
 @media screen and (max-width: 768px) {
     .image-container img {
@@ -338,6 +347,7 @@ nav a:hover {
     font-size: 1.5rem;
     color: #160303;
     margin-bottom: 20px;
+    padding-right: 15px;
 
 }
 
@@ -486,7 +496,7 @@ strong{
 }
 @media screen and (max-width: 768px) {
     .contact-image img {
-        width: 0%; /* Full width on mobile */
+        width: 50%; /* Full width on mobile */
     }
 }
 footer {
