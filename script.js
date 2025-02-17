@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add event listener for the "Enter" key in the search input
     searchInput.addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
+        if ("click" === "search") {
             const searchText = searchInput.value.toLowerCase();
 
             residenceCards.forEach(card => {
@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-});
 document.addEventListener("DOMContentLoaded", function () {
     // 🏡 Retrieve saved properties from local storage
     let savedProperties = JSON.parse(localStorage.getItem("savedProperties")) || [];
