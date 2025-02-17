@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url('../img/bg.jpg')  no-repeat center center/cover;
     background-attachment: fixed;
@@ -44,6 +50,16 @@ nav a {
 
 nav a:hover {
     color: red;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
 
 
@@ -116,6 +132,11 @@ nav a:hover {
 
 .search-box button:hover {
     background: #357ABD;
+}
+@media screen and (max-width: 480px) {
+    .search-box input {
+        width: 80%;
+    }
 }
 
 .image-container {
@@ -367,6 +388,16 @@ strong{
 .contact-card:hover {
     transform: translateY(-5px);
 }
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 80%;
+    }
+}
 
 .contact-card img {
     width: 30px;
@@ -463,4 +494,9 @@ footer {
     text-align: center;
     padding: 10px;
     background: #111;
+}
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
 }
