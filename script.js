@@ -1,22 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
     // 🔍 Search Functionality for Property Listings
     const searchInput = document.querySelector(".search-box input");
     const searchButton = document.querySelector(".search-box button");
     const residenceCards = document.querySelectorAll(".residence-card");
 
+    // Add event listener for the search button
     searchButton.addEventListener("click", function () {
         const searchText = searchInput.value.toLowerCase();
-        
+
         residenceCards.forEach(card => {
             const location = card.querySelector(".property-location").textContent.toLowerCase();
             if (location.includes(searchText)) {
-                card.style.display = "block";
+                card.style.display = "block"; // Show the card if it matches the search
             } else {
-                card.style.display = "none";
+                card.style.display = "none"; // Hide the card if it doesn't match
             }
         });
     });
+
+    // Add event listener for the "Enter" key in the search input
+    searchInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            const searchText = searchInput.value.toLowerCase();
+
+            residenceCards.forEach(card => {
+                const location = card.querySelector(".property-location").textContent.toLowerCase();
+                if (location.includes(searchText)) {
+                    card.style.display = "block"; // Show the card if it matches the search
+                } else {
+                    card.style.display = "none"; // Hide the card if it doesn't match
+                }
+            });
+        }
+    });
+});
 
     // 📝 Add to List Functionality
     const addToListButtons = document.querySelectorAll(".add");

@@ -120,20 +120,22 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
 .search-box input {
     padding: 10px;
-    width: 250px;
+    width: 80%;
     border-radius: 5px 0 0 5px;
     border: none;
     margin-bottom: 10px;
+    font-size: 16px;
 
 }
 
 .search-box button {
-    padding: 10px;
+    padding: 10px 20px;
     background: #4A90E2;
     border: none;
     color: white;
@@ -141,6 +143,7 @@ nav a:hover {
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .search-box button:hover {
@@ -148,7 +151,10 @@ nav a:hover {
 }
 @media screen and (max-width: 480px) {
     .search-box input {
-        width: 80%;
+        width: 90%;
+    }
+    .search-box button{
+        width: 90%;
     }
 }
 
