@@ -11,7 +11,7 @@ body {
 
 /* Login Container */
 .login-container {
-    background: rgba(252, 249, 249, 0.1);
+    background: rgba(230, 228, 228, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,7 @@ body {
 /* Form Elements */
 h2 {
     margin-bottom: 15px;
-    color: #000000;
+    color: #ffffff;
     font-size: 50px;
 }
 
@@ -37,6 +37,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    color: white;
 }
 
 input {
@@ -76,6 +77,7 @@ button:hover {
 .message {
     margin-top: 10px;
     font-size: 14px;
+    color: white;
 }
 
 .message a {
